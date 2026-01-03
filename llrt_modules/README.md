@@ -25,7 +25,7 @@ Check the [Compability matrix](#compatibility-matrix) for the full list.
 ```toml
 [dependencies]
 llrt_modules = { path = "llrt/llrt_modules", default-features = true } # load from local path
-rquickjs = { git = "https://github.com/DelSkayn/rquickjs.git", version = "0.10.0", features = [
+rquickjs = { git = "https://github.com/DelSkayn/rquickjs.git", version = "0.11.0", features = [
 "full-async"] }
 tokio = { version = "1", features = ["full"] }
 
@@ -119,34 +119,34 @@ async fn main() -> Result<(), Error> {
 
 |                | Node.js | LLRT Modules | Feature          | Crate                 |
 | -------------- | ------- | ------------ | ---------------- | --------------------- |
-| abort          | ✔︎     | ✔︎️         | `abort`          | `llrt_abort`          |
-| assert         | ✔︎     | ⚠️           | `assert`         | `llrt_assert`         |
-| async_hooks    | ✔︎     | ⚠️           | `async-hooks`    | `llrt_async_hooks`    |
-| buffer         | ✔︎     | ⚠️           | `buffer`         | `llrt_buffer`         |
-| child process  | ✔︎     | ⚠️           | `child-process`  | `llrt_child_process`  |
-| console        | ✔︎     | ⚠️           | `console`        | `llrt_console`        |
-| crypto         | ✔︎     | ⚠️           | `crypto`         | `llrt_crypto`         |
-| dgram          | ✔︎     | ⚠️           | `dgram`          | `llrt_dgram`          |
-| dns            | ✔︎     | ⚠️           | `dns`            | `llrt_dns`            |
-| events         | ✔︎     | ⚠️           | `events`         | `llrt_events`         |
-| exceptions     | ✔︎     | ⚠️           | `exceptions`     | `llrt_exceptions`     |
-| fetch          | ✔︎     | ⚠️           | `fetch`          | `llrt_fetch`          |
-| fs/promises    | ✔︎     | ⚠️           | `fs`             | `llrt_fs`             |
-| fs             | ✔︎     | ⚠️           | `fs`             | `llrt_fs`             |
-| navigator      | ✔︎     | ⚠️           | `navigator`      | `llrt_navigator`      |
-| net            | ✔︎     | ⚠️           | `net`            | `llrt_net`            |
-| os             | ✔︎     | ⚠️           | `os`             | `llrt_os`             |
-| path           | ✔︎     | ⚠️           | `path`           | `llrt_path`           |
-| perf hooks     | ✔︎     | ⚠️           | `perf-hooks`     | `llrt_perf_hooks`     |
-| stream (lib)   | N/A     | ✔︎          | N/A              | `llrt_stream`         |
-| string_decoder | ✔︎     | ✔︎          | `string_decoder` | `llrt_string_decoder` |
-| timers         | ✔︎     | ⚠️           | `timers`         | `llrt_timers`         |
-| process        | ✔︎     | ⚠️           | `process`        | `llrt_process`        |
-| tty            | ✔︎     | ⚠️           | `tty`            | `llrt_tty`            |
-| url            | ✔︎     | ⚠️           | `url`            | `llrt_url`            |
-| util           | ✔︎     | ⚠️           | `util`           | `llrt_util`           |
-| zlib           | ✔︎     | ⚠️           | `zlib`           | `llrt_zlib`           |
-| Other modules  | ✔︎     | ✘            | N/A              | N/A                   |
+| abort          | ✔︎       | ✔︎️            | `abort`          | `llrt_abort`          |
+| assert         | ✔︎       | ⚠️            | `assert`         | `llrt_assert`         |
+| async_hooks    | ✔︎       | ⚠️            | `async-hooks`    | `llrt_async_hooks`    |
+| buffer         | ✔︎       | ⚠️            | `buffer`         | `llrt_buffer`         |
+| child process  | ✔︎       | ⚠️            | `child-process`  | `llrt_child_process`  |
+| console        | ✔︎       | ⚠️            | `console`        | `llrt_console`        |
+| crypto         | ✔︎       | ⚠️            | `crypto`         | `llrt_crypto`         |
+| dgram          | ✔︎       | ⚠️            | `dgram`          | `llrt_dgram`          |
+| dns            | ✔︎       | ⚠️            | `dns`            | `llrt_dns`            |
+| events         | ✔︎       | ⚠️            | `events`         | `llrt_events`         |
+| exceptions     | ✔︎       | ⚠️            | `exceptions`     | `llrt_exceptions`     |
+| fetch          | ✔︎       | ⚠️            | `fetch`          | `llrt_fetch`          |
+| fs/promises    | ✔︎       | ⚠️            | `fs`             | `llrt_fs`             |
+| fs             | ✔︎       | ⚠️            | `fs`             | `llrt_fs`             |
+| navigator      | ✔︎       | ⚠️            | `navigator`      | `llrt_navigator`      |
+| net            | ✔︎       | ⚠️            | `net`            | `llrt_net`            |
+| os             | ✔︎       | ⚠️            | `os`             | `llrt_os`             |
+| path           | ✔︎       | ⚠️            | `path`           | `llrt_path`           |
+| perf hooks     | ✔︎       | ⚠️            | `perf-hooks`     | `llrt_perf_hooks`     |
+| stream (lib)   | N/A     | ✔︎            | N/A              | `llrt_stream`         |
+| string_decoder | ✔︎       | ✔︎            | `string_decoder` | `llrt_string_decoder` |
+| timers         | ✔︎       | ⚠️            | `timers`         | `llrt_timers`         |
+| process        | ✔︎       | ⚠️            | `process`        | `llrt_process`        |
+| tty            | ✔︎       | ⚠️            | `tty`            | `llrt_tty`            |
+| url            | ✔︎       | ⚠️            | `url`            | `llrt_url`            |
+| util           | ✔︎       | ⚠️            | `util`           | `llrt_util`           |
+| zlib           | ✔︎       | ⚠️            | `zlib`           | `llrt_zlib`           |
+| Other modules  | ✔︎       | ✘            | N/A              | N/A                   |
 
 _⚠️ = partially supported_
 
